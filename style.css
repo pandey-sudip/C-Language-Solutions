@@ -45,19 +45,22 @@ h2{
 	.container{
 		width: 90%;
 	}
+	.search input{
+		width: 300px;
+	}
 }
 
 
 .search{
 	height: 100px;
-	width: 100%;
+	/* width: 100%; */
 	text-align: center;
 }
 .search input{
 	float: right;
 	margin: 25px 10px;
 	height: 40px;
-	width: 30vw;
+	/* width: 30vw; */
 	border-radius: 8px;
 	outline: none;
 	border: none;
