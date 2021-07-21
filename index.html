@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>C Language Complete Question and Solution</title>
+</head>
+
+<body>
+    <div class="container" id="myDropdown">
+
+        <h1>60+ C Programming Language Solution's</h1>
+        <div class="search"><input autocomplete="off" type="text" placeholder="Search.." id="myInput"
+                onkeyup="filterFunction()">
+        </div>
+        <!-- <h2>Genral Programs</h2> -->
+        <ol id="list">
+            <li>C Language Boilerplate
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	printf("Hello World");
+	return 0;
+}
+/*
+Output:
+Hello World
+*/
+</code></pre>
+            </li>
+
+            <li>Print Ascii Value Of A Character
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	char c;
+	printf("Enter A Character:\n");
+	scanf("%c", &c);
+	printf("The Ascii Value Of %c Is: %d", c, c);
+	return 0;
+}
+/*
+OutPut:
+Enter A Character:
+A
+The Ascii Value Of A Is: 65
+*/</code></pre>
+            </li>
+            <li>Sum Of Two Number's Without Input
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int a=10, b=20, sum;
+	sum=a+b;
+	printf("The Sum Of Two Number's is: %d", sum);	
+	return 0;
+}
+/*
+Output:
+The Sum Of Two Number's is: 30
+*/
+</code></pre>
+            </li>
+            <li>Sum Of Two Number's With User Input
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int a, b, sum;
+	printf("Enter Two Number's:\n");
+	scanf("%d %d", &a, &b);
+	sum=a+b;
+	printf("The Sum Of Two Number's is %d ", sum);    
+	return 0;
+}
+/*
+Output:
+Enter Two Number's:
+4
+5
+The Sum Of Two Number's is 9 
+*/</code></pre>
+            </li>
+            <li>Multiplication of Two Number's
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int a=5, b=4, mul;
+	mul=a*b;
+	printf("The Multiplication Of Two Number's is %d ", mul);    
+	return 0;
+}
+/*Output:
+The Multiplication Of Two Number's is 20 
+*/
+</code></pre>
+            </li>
+            <li>Multiplication of Two Number's With User Input
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int a, b, mul;
+	printf("Enter Two number's: \n");
+	scanf("%d %d", &a, &b);
+	mul=a*b;
+	printf("The Multiplication Of Two Number's Is: %d", mul);    
+	return 0;
+}
+/*
+Output:
+Enter Two number's: 
+4
+5
+The Multiplication Of Two Number's Is: 20
+*/
+</code></pre>
+            </li>
+            <li>Area Of circle Using C Programming
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    float area, r, PI=3.14;
+    printf("Enter Radius Of Circle: \n");
+    scanf("%f", &r);
+    area=PI*r*r;
+    printf("The Area Of Circle Is: %f ", area);    
+    return 0;
+}
+/*
+Output:
+Enter Radius Of Circle: 
+7
+The Area Of Circle Is: 153.860016 
+*/
+</code></pre>
+            </li>
+            <li>Aera Of Rectangle Using C Programming
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int l, b, area;
+    printf("Enter The Length Of Rectangle:\n");
+    scanf("%d", &l);
+    printf("Enter The Breadth Of Rectangle: \n");
+    scanf("%d", &b);
+    area=l*b;
+    printf("The area of Rectangle is: %d", area);    
+    return 0;
+}
+/*
+Output:
+Enter The Length Of Rectangle:
+4
+Enter The Breadth Of Rectangle: 
+5
+The area of Rectangle is: 20
+*/
+</code></pre>
+            </li>
+            <li>Swapping Value Using C Programming
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int x = 10, y = 15, temp;
+	printf("Value Before Swapping x=%d and y=%d\n", x, y);
+	temp = x;
+	x = y;
+	y = temp;
+	printf("Value After Swapping x = %d and y = %d", x, y);
+	return 0;    
+}
+/*
+Output:
+Value Before Swapping x=10 and y=15
+Value After Swapping x = 15 and y = 10
+*/</code></pre>
+            </li>
+            <!-- <h2>If-Else Statement</h2> -->
+            <li>Program To Find Input Number Is Odd Or even
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int a;
+    printf("Enter A Number:\n");
+    scanf("%d", &a);
+    if(a%2==0){
+        printf("The Input Number Is Even.");
+    }
+    else{
+        printf("The Input Number Is Odd.");
+    }
+    return 0;
+}
+/*
+Output:
+Enter A Number:
+5
+The Input Number Is Odd.
+*/
+</code></pre>
+            </li>
+            <li>Program To Find a Input Number Is Divisible By 5
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int a;
+    printf("Enter A Number:\n");
+    scanf("%d", &a);
+    if(a%5==0){
+        printf("The Number %d Is Divisible By 5", a);
+    }
+    else{
+        printf("The Number %d Is Not Divisible By 5", a);
+    }
+    return 0;
+}
+/*
+Output:
+Enter A Number:
+25
+The Number 25 Is Divisible By 5
+*/
+</code></pre>
+            </li>
+            <li>Find The Greatest Number Among 3 Numbers
+                <pre class="language-c"><code>
+#include&lt;stdio.h&gt;
+int main()
+{
+	int a, b, c;
+	printf("Enter 3 Number's:\n");
+	scanf("%d %d %d", &a, &b, &c);
+	if(a&gt;b && a&gt;c){
+		printf("The %d is Greatest Number.", a);
+	}    
+	else if(b&gt;a && b&gt;c){
+		printf("The %d is Greatest Number.", b);
+	}
+	else{
+		printf("The %d is Greatest Number.", c);
+	}
+	return 0;
+}
+				
+/*
+Output:
+Enter 3 Number's:
+7
+1
+2
+The 7 is Greatest Number.
+*/</code></pre>
+            </li>
+            <li>Find Middle Number Among 3 Number's
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+    if(b&gt;a && a&gt;c || c&gt;a && a&gt;b){
+        printf("\n%d is a middle number",a);
+    }
+
+
+    if(a&gt;b && b&gt;c || c&gt;b && b&gt;a){
+        printf("\n%d is a middle number",b);
+    }
+
+    if(a&gt;c && c&gt;b || b&gt;c && c&gt;a){
+        printf("\n%d is a middle number",c);
+    }
+    return 0;
+}
+/*
+Output:
+Enter three numbers
+5
+6
+7
+
+6 is a middle number
+*/
+</code></pre>
+            </li>
+            <li>Find Smallest Number Among 3 Numbers
+                <pre class="language-c"><code>
+	#include&lt;stdio.h&gt;
+int main()
+{
+    int a, b, c;
+    printf("Enter 3 Number's:\n");
+    scanf("%d %d %d", &a, &b, &c);
+    if(a&lt;b && a&lt;c){
+        printf("The %d is Smallest Number.", a);
+    }    
+    else if(b&lt;a && b&lt;c){
+        printf("The %d is Smallest Number.", b);
+    }
+    else{
+        printf("The %d is Smallest Number.", c);
+    }
+    return 0;
+}
+
+</code></pre>
+            </li>
+            <!-- <h2>Case Statement</h2> -->
+            <li>Program To Check Input Character Is Vowel Or Not
+                <pre class="language-c">
+					<code>
+#include&lt;stdio.h&gt;
+int main()
+{
+
+	char ch;
+	printf("Input a Character :  ");
+	scanf("%c", &ch);
+	
+	switch(ch)
+		{
+			case 'a':
+			case 'A':
+			case 'e':
+			case 'E':
+			case 'i':
+			case 'I':
+			case 'o':
+			case 'O':
+			case 'u':
+			case 'U':
+				printf("\n\n%c is a vowel.\n\n", ch);
+			break;
+			default:
+				printf("%c is not a vowel.\n\n", ch);
+			}
+								
+		return 0;
+	}
+/*
+	Output:
+	Input a Character :  A
+	A is a vowel.
+*/</code>
+				</pre>
+            </li>
+            <!-- <h2>While Loop</h2> -->
+            <li>Basic While Loop Program For Print 1--10
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int a;
+	while (a&lt;10)
+		{
+			printf("%d\t", a);
+			a++;
+		}					
+	return 0;
+}
+/*
+Output:
+0       1       2       3       4       5       6       7       8       9
+*/</code></pre>
+            </li>
+            <!-- <h2>Do-While Loop</h2> -->
+            <li>Basic Do-While Loop For Print 10-0
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int c=10;
+		do
+			{
+				printf("%d\t", c);
+				c=c-1;
+			} while (c&gt;0);				
+	return 0;
+}
+/*
+Output:
+10      9       8       7       6       5       4       3       2       1
+*/		</code></pre>
+            </li>
+            <!-- <h2>For Loop</h2> -->
+            <li>Program To Find Factorial using For Loop
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int fact, i, n;
+	fact = 1;
+	printf("Enter the number:\n");
+	scanf("%d" , &n);
+	for(i = 1; i &lt;= n; i++)
+	{
+		fact = fact*i;
+	}
+	printf("Factorial of %d is %d", n , fact);
+	return 0;
+}
+/*
+Output:
+Enter the number:
+5
+Factorial of 5 is 120
+*/
+</code></pre>
+            </li>
+            <!-- <h2>Nested For Loop</h2> -->
+            <li>Nested For Loop Simple Program to Simple Pattern
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int i, j;
+	for(i=0;i&lt;=5;i++){
+		for(j=0;j&lt;=i;j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+/*
+Output:
+*
+**
+***
+****
+*****
+******
+*/</code></pre>
+            </li>
+            <!-- <h2>Numeric C Programs</h2> -->
+            <li>Average Of 5 Numbers Using C Programming
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int a, b, c, d, e;
+	float avg;
+	printf("Enter 5 Number's :\n");
+	scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+	avg=(a+b+c+d+e)/5;
+	printf("The Average Of 5 Number's is: %f", avg);
+	return 0;
+}/*
+Output:
+Enter 5 Number's :
+1
+2
+3
+5
+4
+The Average Of 5 Number's is: 3.000000
+*/</code></pre>
+            </li>
+            <li>Print Multipication Table Of Any Number
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main() {
+  int n, i;
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+  for (i = 1; i &lt;= 10; ++i) {
+    printf("%d * %d = %d \n", n, i, n * i);
+  }
+  return 0;
+}
+/*
+Output:
+Enter an integer: 6
+6 * 1 = 6 
+6 * 2 = 12
+6 * 3 = 18
+6 * 4 = 24
+6 * 5 = 30
+6 * 6 = 36
+6 * 7 = 42
+6 * 8 = 48
+6 * 9 = 54
+6 * 10 = 60
+*/
+</code></pre>
+            </li>
+            <li>Sum Of N Number's Using C Programming
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main() {
+    int n, i, sum = 0;
+
+    printf("Enter A integer: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; ++i) {
+        sum += i;
+    }
+
+    printf("Sum of 0 from %d Is: %d",n, sum);
+    return 0;
+}
+/*
+Output:
+Enter A integer: 5
+Sum of 0 from 5 Is: 15
+*/
+</code></pre>
+            </li>
+            <li>Program in C To Find That The Weather Number Is Palindrome or not
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main() {
+  int n, reversed = 0, remainder, original;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    original = n;
+
+    while (n != 0) {
+        remainder = n % 10;
+        reversed = reversed * 10 + remainder;
+        n /= 10;
+    }
+
+    if (original == reversed)
+        printf("%d is a palindrome.", original);
+    else
+        printf("%d is not a palindrome.", original);
+
+    return 0;
+}
+/*
+Output:
+Enter an integer: 101
+101 is a palindrome.
+*/
+</code></pre>
+            </li>
+            <!-- <h2>Array's C Programming</h2> -->
+            <li>C Programming To Find Average Using Array
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+     int marks[10], i, n, sum = 0, average;
+
+     printf("Enter number of elements: ");
+     scanf("%d", &n);
+
+     for(i=0; i&lt;n; ++i)
+     {
+          printf("Enter number%d: ",i+1);
+          scanf("%d", &marks[i]);
+          
+          sum += marks[i];
+     }
+
+     average = sum/n;
+     printf("Average = %d", average);
+
+     return 0;
+}
+/*
+Output:
+Enter number of elements: 5
+Enter number1: 1
+Enter number2: 2
+Enter number3: 3
+Enter number4: 4
+Enter number5: 5
+Average = 3
+*/
+</code></pre>
+            </li>
+            <!-- <h2>Pointer in C Programming</h2> -->
+            <li>Find The Variable Address Using Pointer
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+  int Variable = 15;
+  printf("Variable: %d\n", Variable);
+
+  printf("address of Variable: %p", &Variable);  
+  return 0;
+}
+/*
+Output:
+Variable: 15
+address of Variable: 000000000062FE1C
+*/
+</code></pre>
+            </li>
+            <!-- <h2>Strings In C Programming</h2> -->
+            <li>C Program To Take Input Name and Print That
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    char name[20];
+    printf("Enter name: ");
+    scanf("%s", name);
+    printf("Your name is %s.", name);
+    return 0;
+}
+/*
+Output:
+Enter name: Tech 
+Your name is Tech.
+*/
+</code></pre>
+            </li>
+            <li>Find The Length Of String Using strlen() Function In C
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+  char a[100];
+  int length;
+
+  printf("Enter a string: \n");
+  gets(a);
+
+  length = strlen(a);
+
+  printf("Length of the string = %d\n", length);
+
+  return 0;
+}
+</code></pre>
+            </li>
+            <li>Concatenates Two Strings using strcat() Function
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+   char str1[100] = "C Programming ", str2[] = "Language";
+   strcat(str1, str2);
+   puts(str1);
+   return 0;
+}
+/*
+Output:
+C Programming Language
+*/
+</code></pre>
+            </li>
+            <li>Compare Two Strings Using strcmp() Function
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+int main()
+{
+    char a[100], b[100];    
+    printf("Enter the first string\n");    
+    gets(a);    
+    printf("Enter the second string\n");    
+    gets(b);
+    if( strcmp(a,b) == 0 )
+        printf("Entered strings are equal.\n");
+    else
+        printf("Entered strings are not equal.\n");
+	return 0;
+}
+/*
+Output:
+Enter the first string
+Programming
+Enter the second string
+Programming
+Entered strings are equal.
+*/
+</code></pre>
+            </li>
+            <li>Convert Uppercase String using strlwr() Function
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+int main()
+{
+   char s[100];
+   printf("Enter a string in Uppercase: ");
+   scanf("%[^\n]",s);
+   printf("In Lower Case:\n");
+   puts(strlwr(s));
+   return 0;
+ }
+/*
+Output:
+Enter a string in Uppercase: PROGRAMMING
+In Lower Case:
+programming
+ */
+</code></pre>
+            </li>
+            <li>Convert Lowercase String Into Uppercase String Uisng strupr() Function
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+int main()
+{
+   char s[100];
+   printf("Enter a string in Lowercase: ");
+   scanf("%[^\n]",s);
+   printf("In Uppercase Case:\n");
+   puts(strupr(s));
+   return 0;
+ }
+/*
+Output:
+Enter a string in lowercase: programming
+In Uppercase Case:
+PROGRAMMING
+*/
+</code></pre>
+            </li>
+            <li>Reverse A String Using C Programming
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#define MAX_SIZE 100 
+
+int main()
+{
+    char str[MAX_SIZE];
+
+    printf("Enter any string: ");
+    gets(str);
+
+    printf("Original string = %s\n", str);
+
+    strrev(str);
+    printf("Reverse string = %s", str);
+
+    return 0;
+}
+/*
+Output:
+Enter any string: Hello
+Original string = Hello
+Reverse string = olleH
+*/</code></pre>
+            </li>
+            <li>Check The String Is Palindrome Or Not Using C Programing
+                <pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+#define MAX_SIZE 100 
+
+int main()
+{
+    char str[MAX_SIZE], reverse[MAX_SIZE];
+    int flag;
+
+    printf("Enter any string: ");
+    gets(str);
+
+
+    strcpy(reverse, str); 
+    strrev(reverse);      
+
+    flag = strcmp(str, reverse); 
+
+    if(flag == 0)
+    {
+        printf("String is Palindrome.");
+    }
+    else
+    {
+        printf("String is Not Palindrome.");
+    }
+
+    return 0;
+}
+/*
+Output:
+Enter any string: mam 
+String is Palindrome.
+*/
+</code></pre>
+            </li>
+            <!-- <h2>File Handling C programming</h2> -->
+
+            <li>Create a Txt file and Save Details Of A Person
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    FILE *fptr;
+    char name[20];
+    int age;
+    float salary;
+
+    fptr = fopen("details.txt", "w");
+
+    if (fptr == NULL)
+    {
+        printf("File does not exist.\n");
+        return;
+    }
+    printf("Enter the name:\n");
+    scanf("%s", name);
+    fprintf(fptr, "Name  = %s\n", name);
+
+    printf("Enter the age:\n");
+    scanf("%d", &age);
+    fprintf(fptr, "Age  = %d\n", age);
+
+    printf("Enter the salary:\n");
+    scanf("%f", &salary);
+    fprintf(fptr, "Salary  = %.2f\n", salary);
+
+    fclose(fptr);
+    return 0;
+}
+/*Output:
+details.txt Will be created and ask for some details
+Enter the name:
+John
+Enter the age:
+27
+Enter the salary:
+26000
+
+this details will be saved on details.txt file in that format
+Name  = John
+Age  = 27
+Salary  = 26000.00
+*/			</code></pre>
+            </li>
+            <!-- <h2>Problem and Solution's for Beginner's</h2> -->
+            <li>Length Conversion Using c Pogramming (Centimerter To Meter and KiloMeter)
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    float cm, meter, km;
+
+    printf("Enter length in centimeter: ");
+    scanf("%f", &cm);
+
+    meter = cm / 100.0;
+    km    = cm / 100000.0;
+
+    printf("Length in Meter = %f m \n", meter);
+    printf("Length in Kilometer = %f km", km);
+
+    return 0;
+}
+/*
+Output:
+Enter length in centimeter: 1000
+Length in Meter = 10.000000 m 
+Length in Kilometer = 0.010000 km
+*/
+</code></pre>
+            </li>
+            <li>Find The Power Of Any Number
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main()
+{
+    int base, expo, power;
+
+    printf("Enter base: ");
+    scanf("%d", &base);
+    printf("Enter exponent: ");
+    scanf("%d", &expo);
+
+    power = pow(base, expo);
+
+    printf("%d ^ %d = %d", base, expo, power);
+
+    return 0;
+}
+/*
+Output:
+Enter base: 2
+Enter exponent: 2
+2 ^ 2 = 4
+*/
+</code></pre>
+            </li>
+
+            <li>Find The Square Root of Any Number
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main()
+{
+    float num, root;
+
+    printf("Enter any number to find square root: ");
+    scanf("%f", &num);
+
+    root = sqrt(num);
+
+    printf("Square root of %.2f = %.2f", num, root);//%.2f is used for 2 numbers after decimal
+
+    return 0;
+}
+/*
+Output:
+Enter any number to find square root: 100
+Square root of 100.00 = 10.00
+*/
+</code></pre>
+            </li>
+            <li>C Program to Find Simple Interest
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    float principle, time, rate, SI;
+
+    printf("Enter principle (amount): ");
+    scanf("%f", &principle);
+
+    printf("Enter time: ");
+    scanf("%f", &time);
+
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+    SI = (principle * time * rate) / 100;
+    printf("Simple Interest = %.2f", SI);
+    return 0;
+}
+/*
+Output:
+Enter principle (amount): 100000
+Enter time: 1
+Enter rate: 20
+Simple Interest = 20000.00
+*/
+
+</code></pre>
+            </li>
+            <li>C Program To Check The Weather Year Is Leap Year Or not
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   else {
+      printf("%d is not a leap year.", year);
+   }
+
+   return 0;
+}
+/*
+Output:
+Enter a year: 2016
+2016 is a leap year.
+*/
+</code></pre>
+            </li>
+            <li>C Program To Check Alphabet or not
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+  char ch;
+  printf("Enter A Character:\n");
+  scanf("%c", &ch);
+
+  if((ch>='a' && ch<='z') ||(ch>='A' && ch<='Z')){
+    printf("This is an alphabet");
+  } 
+  else{
+      printf("This is Not Alphabet");
+  }
+  return 0;
+}
+/*
+Output:
+Enter A Character:
+a
+This is an alphabet
+*/
+</code></pre>
+            </li>
+            <li>C Program to print the day of week Using Switch-Case
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int week;
+    printf("Enter week number(1-7): ");
+    scanf("%d", &week);
+    
+    switch(week)
+    {
+        case 1: 
+            printf("Sunday");
+            break;
+        case 2: 
+            printf("Monday");
+            break;
+        case 3: 
+            printf("Tuesday");
+            break;
+        case 4: 
+            printf("Wednesday");
+            break;
+        case 5: 
+            printf("Thursday");
+            break;
+        case 6: 
+            printf("Friday");
+            break;
+        case 7: 
+            printf("Saturday");
+            break;
+        default: 
+            printf("Invalid input! Please enter week number between 1-7.");
+    }
+    return 0;
+}
+/*
+Output:
+Enter week number(1-7): 4
+Wednesday
+*/
+</code></pre>
+            </li>
+            <li>C Program to Print All Alphabets from a-z
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    char ch;
+
+    printf("Alphabets from a - z are: \n");
+    for(ch='a'; ch<='z'; ch++)
+    {
+        printf("%c\t", ch);
+    }
+
+    return 0;
+}
+/*
+Output:
+Alphabets from a - z are: 
+a       b       c       d       e       f       g       h       i       j       
+k       l       m       n       o       p       q		r       s       t       
+u       v       w       x       y       z
+*/
+</code></pre>
+            </li>
+            <li>C Program To Print Even Number's from 0 To N
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int i, n;
+  
+    printf("Print all even numbers till: ");
+    scanf("%d", &n);
+
+    printf("Even numbers from 1 to %d are: \n", n);
+
+    for(i=1; i&lt;=n; i++)
+    {
+        if(i%2 == 0)
+        {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
+/*
+Output:
+Print all even numbers till: 10
+Even numbers from 1 to 10 are: 
+2
+4
+6
+8
+10
+*/
+</code></pre>
+            </li>
+            <li>C Program To Print Even Number's from 0 To N
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int i, n;
+  
+    printf("Print all even numbers till: ");
+    scanf("%d", &n);
+
+    printf("Even numbers from 1 to %d are: \n", n);
+
+    for(i=1; i&lt;=n; i++)
+    {
+        if(i%2!= 0)
+        {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
+/*
+Output:
+Print all even numbers till: 10
+Even numbers from 1 to 10 are: 
+1
+3
+5
+7
+9
+*/
+</code></pre>
+            </li>
+            <li>C Program To Print Multiplication Table of Any Number
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int i, num;
+
+    printf("Enter number to print table: ");
+    scanf("%d", &num);
+
+    for(i=1; i&lt;=10; i++)
+    {
+        printf("%d * %d = %d\n", num, i, (num*i));
+    }
+
+    return 0;
+}
+/*
+Output:
+Enter number to print table: 6
+6 * 1 = 6
+6 * 2 = 12
+6 * 3 = 18
+6 * 4 = 24
+6 * 5 = 30
+6 * 6 = 36
+6 * 7 = 42
+6 * 8 = 48
+6 * 9 = 54
+6 * 10 = 60
+*/
+</code></pre>
+            </li>
+            <li>C Program to find a number is negative, Zero(0) and Positive
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int n;
+    printf("Enter A Number:\n");
+    scanf("%d", &n);
+    if(n&lt;0){
+        printf("%d Is Negative", n);
+    }    
+    else if(n==0){
+        printf("%d is Zero(0)", n);
+    }
+    else{
+        printf("%d Is Positive", n);
+    }
+    return 0;
+}
+/*
+Output:
+Enter A Number:
+55
+55 Is Positive
+*/
+                </code></pre>
+            </li>
+            <li>C Program to input a employee data and print that
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+struct Employee
+{
+    char name[30];
+    int roll_no;
+    char favChar;
+    char address[40];
+};
+int main()
+{
+    struct Employee s1;
+
+    printf("\nEnter Employee Name:\n");
+	scanf("%s", s1.name);
+    printf("Enter Employee Salary.:\n");
+    scanf("%d", &s1.roll_no);
+
+    printf("Enter Employee Address:\n");
+    scanf("%s", &s1.address);
+
+
+    printf("\n\n\n\tThe Employee Name Is:%s", s1.name);
+    printf("\n\tThe Employee Roll No. Is:%d", s1.roll_no);
+    printf("\n\tThe Employee Address Is:%s", s1.address);
+
+    return 0;
+}
+/*
+Output:
+Enter Employee Name:
+John
+Enter Employee Salary.:
+15000
+Enter Employee Address:
+Canada
+
+
+
+        The Employee Name Is:John
+        The Employee Roll No. Is:15000
+        The Employee Address Is:Canada
+*/
+</code></pre>
+            </li>
+            <li>C Program to Input Student Detais and Print That
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+struct student
+{
+    char name[30];
+    int roll_no;
+    char favChar;
+    char address[40];
+};
+int main()
+{
+    struct student s1;
+
+    printf("\nEnter Student Name:\n");
+	scanf("%s", s1.name);
+    printf("Enter Student Roll No.:\n");
+    scanf("%d", &s1.roll_no);
+
+    printf("Enter Student Favourate Chracter:\n");
+    scanf(" %c", &s1.favChar);
+
+    printf("Enter Student Address:\n");
+    scanf("%s", &s1.address);
+
+    printf("\nStudent Details");
+    printf("\n\nThe Student Name Is:%s", s1.name);
+    printf("\nThe Student Roll No. Is:%d", s1.roll_no);
+    printf("\nThe Student Favourate Chracter Is:%c", s1.favChar);
+    printf("\nThe Student Address Is:%s", s1.address);
+
+    return 0;
+}
+/*
+Output:
+Enter Student Name:
+John
+Enter Student Roll No.:
+12 
+Enter Student Favourate Chracter:
+W
+Enter Student Address:
+France
+
+Student Details
+The Student Name Is:John
+The Student Roll No. Is:12
+The Student Favourate Chracter Is:W
+The Student Address Is:France
+*/</code></pre>
+            </li>
+            <li>C Program to Convert Celcius to Fahrenheit
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    float celsius, fahrenheit;
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+    
+    fahrenheit = (celsius * 9 / 5) + 32;
+    printf("%.2f Celsius = %.2f Fahrenheit", celsius, fahrenheit);
+    return 0;
+}
+/*
+Output:
+Enter temperature in Celsius: 0
+0.00 Celsius = 32.00 Fahrenheit
+*/
+</code></pre>
+            </li>
+            <li>C Program to reverse a number
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main() {
+    int n, rev = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (n != 0) {
+        remainder = n % 10;
+        rev = rev * 10 + remainder;
+        n /= 10;
+    }
+    printf("Reversed number = %d", rev);
+    return 0;
+}
+/*
+Output:
+Enter an integer: 5542
+Reversed number = 2455
+*/
+</code></pre>
+            </li>
+            <li>C Program to find a factorial of number using recursion
+                <pre class="language-c"><code>#include&lt;stdio.h&gt;
+long int multiplyNumbers(int n);
+int main() {
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    printf("Factorial of %d = %ld", n, multiplyNumbers(n));
+    return 0;
+}
+
+long int multiplyNumbers(int n) {
+    if (n&gt;=1)
+        return n*multiplyNumbers(n-1);
+    else
+        return 1;
+}
+/*
+Output:
+Enter a positive integer: 5
+Factorial of 5 = 120
+*/
+</code></pre>
+            </li>
+            <h2>Star Patter's Programs</h2>
+            <li>C Program to print star pyramid Pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int n, s, i, j;
+    printf("Enter number of rows: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        for (s = i; s < n; s++)
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= (2 * i - 1); j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+Output:
+Enter number of rows: 5
+    *
+   ***
+  *****
+ *******
+*********
+*/
+</code></pre>
+            </li>
+            <li>C Program to print half star Pattern Pyramid
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int i, j, n;
+    printf("Enter number of rows: ");
+    scanf("%d", &n);
+    for (i = 1; i &lt;= n; i++)
+    {
+        for (j = 1; j &lt;= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+OUtput:
+Enter number of rows: 5
+* 
+* *
+* * *
+* * * *
+* * * * *
+
+*/
+</code></pre>
+            </li>
+            <li>C Program to print inverted half star pyramid pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int i, j, n;
+    printf("Enter number of rows: ");
+    scanf("%d", &n);
+    for (i = n; i &gt;= 1; i--)
+    {
+        for (j = 1; j &lt;= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+Output:
+Enter number of rows: 5
+* * * * * 
+* * * *
+* * *
+* *
+*
+
+*/</code></pre>
+            </li>
+            <li>C Program to print Hollow star pyramid pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int r, i, j, s;
+    printf("Enter number of rows: ");
+    scanf("%d", &r);
+    for (i = 1; i &lt;= r; i++)
+    {
+        for (s = i; s &lt; r; s++)
+            printf(" ");
+        for (j = 1; j &lt;= (2 * r - 1); j++)
+        {
+            if (i == r || j == 1 || j == 2 * i - 1)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+Output:
+Enter number of rows: 5
+    *        
+   * *
+  *   *
+ *     *
+*********
+*/
+</code></pre>
+            </li>
+            <li>C Program to print reverse hollow star pyramid pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int r, i, j, s;
+    printf("Enter number of rows: ");
+    scanf("%d", &r);
+    for (i = r; i &gt;= 1; i--)
+    {
+        for (s = i; s &lt; r; s++)
+            printf(" ");
+        for (j = 1; j &lt;= 2 * i - 1; j++)
+        {
+            if (i == r || j == 1 || j == 2 * i - 1)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+Output:
+Enter number of rows: 5
+*********
+ *     *
+  *   *
+   * *
+    *
+*/
+</code></pre>
+            </li>
+            <li>C Program To Print Square Star Pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int n, i, j;
+    printf("Enter the number of rows:\n");
+    scanf("%d", &n);
+    for (i = 0; i &lt; n; i++)
+    {
+        for (j = 0; j &lt; n; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+/*
+Output:
+Enter the number of rows:
+5
+*****
+*****
+*****
+*****
+*****
+*/
+</code></pre>
+            </li>
+            <li>C Program To Print Plus Pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n, i, j;
+    printf("Enter The Number To Print Plus Pattern(Odd Only):\n");
+    scanf("%d", &n);
+    for (i = 1; i &lt;= n; i++)
+    {
+        if (i == ((n / 2) + 1))
+        {
+            for (j = 1; j &lt;= n; j++)
+            {
+                printf("+");
+            }
+        }
+        else
+        {
+            for (j = 1; j &lt;= n / 2; j++)
+            {
+                printf(" ");
+            }
+            printf("+");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+Output:
+Enter The Number To Print Plus Pattern(Odd Only):
+5
+  +
+  +
++++++
+  +
+  +
+*/
+</code></pre>
+            </li>
+            <li>C Program To Print X Star Pattern
+                <pre class="language-c"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n, m, i, j;
+    printf("Enter the number:\n");
+    scanf("%d", &n);
+    m = 2 * n - 1;
+    for (i = 1; i &lt;= m; i++)
+    {
+        for (j = 1; j &lt;= m; j++)
+        {
+            if (i == j || j == (m - i + 1))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+/*
+Output:
+Enter the number5
+*       *
+ *     *
+  *   *
+   * *
+    *
+   * *
+  *   *
+ *     * 
+*       *
+*/
+</code></pre>
+            </li>
+            <h2>C Programming Project</h2>
+            <li>Calculator Using Case Statement
+                <pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a, b;
+    char op;
+    float result;
+
+    printf("Enter First Number:");
+    scanf("%d", &a);
+
+    printf("Enter Second Number:");
+    scanf("%d", &b);
+
+    printf("Enter OPerater:");
+    scanf(" %c", &op);
+
+    switch (op)
+    {
+    case '+':
+        result = a + b;
+        printf("The Sum Is %f", result);
+        break;
+
+    case '-':
+        result = a - b;
+        printf("The Subtracr Is %f", result);
+        break;
+
+    case '*':
+        result = a * b;
+        printf("The Multiply Is %f", result);
+        break;
+
+    case '/':
+        result = a / b;
+        printf("The Division Is %f", result);
+        break;
+
+    default:
+        printf("Please Envalid Operater");
+        break;
+    }
+    return 0;
+}
+/*
+Output:
+Enter First Number:4
+Enter Second Number:5
+Enter OPerater:+
+The Sum Is 9.000000
+*/
+    </code></pre>
+            </li>
+        </ol>
+    </div>
+</body>
+<script>
+    /* Javascript function to search the list*/
+    function filterFunction() {
+        let input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        /* change everything to lower or upper case in order 
+        to make the search case insensitive */
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        li = div.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            txtValue = li[i].textContent || li[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</html>
