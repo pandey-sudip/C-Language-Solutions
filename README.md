@@ -1,7 +1,8 @@
 # C-Language-Solutions
 ***Features:***<br>
-**1).Search and Filter<br>
-2).Copy Code**<br>
+- Search and Filter<br>
+- Copy Code
+- Syntax Highlighting
 
 **Live Demo**:
 ***<a href="https://technical-vandar-885.github.io/C-Language-Solutions/">Click Here</a>***<br><br>
