@@ -100,18 +100,5 @@ h2{
 }
 
 code[class*="language-"], pre[class*="language-"] {
-    color: cadetblue !important;;
-    background: none !important;;
-    text-shadow: 0 1px rgb(0 0 0 / 30%) !important;;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;;
-    font-size: 1em !important;;
-    text-align: left !important;;
-    white-space: pre !important;;
-    word-spacing: normal !important;;
-    word-break: normal !important;;
-    word-wrap: normal !important;;
-    line-height: 1.5 !important;;
-    -moz-tab-size: 4 !important;;
-    -o-tab-size: 4 !important;;
-    tab-size: 4 !important;;
-    -webkit-hyphens: none !important;;
+    color: cadetblue !important;
+}
