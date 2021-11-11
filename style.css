@@ -102,3 +102,7 @@ h2{
 code[class*="language-"], pre[class*="language-"] {
     color: cadetblue !important;
 }
+code[class*="language-"],
+pre[class*="language-"] {
+	color: cadetblue !important;
+}
