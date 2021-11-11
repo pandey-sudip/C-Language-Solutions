@@ -49,8 +49,17 @@ h2{
 		width: 300px;
 	}
 }
-
-
+@media (max-width: 332px) {
+	
+	.search input{
+		width: 250px;
+	}
+}
+@media (max-width: 270px) {
+	.search input{
+		width: 220px;
+	}
+}
 .search{
 	height: 100px;
 	/* width: 100%; */
@@ -72,4 +81,20 @@ h2{
 ::placeholder{
 	color: white;
 	font-weight: 650;
+}
+
+.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted {
+    color: #f92672 !important;
+}
+
+.token.keyword {
+    color: #04e509 !important;
+}
+
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+    color: turquoise !important;
+}
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable {
+    color: tomato !important;
 }
