@@ -5,7 +5,7 @@
 - Syntax Highlighting
 
 **Live Demo**:
-***<a href="https://technical-vandar-885.github.io/C-Language-Solutions/">Click Here</a>***<br><br>
+***<a href="https://pandey-sudip.github.io/C-Language-Solutions/">Click Here</a>***<br><br>
 **Pdf Version:**:
 ***<a href="https://drive.google.com/file/d/1HYt-ki7V-hbtpg-tWNMet3vs5wdi-GjD/view?usp=sharing">Download Pdf</a>***
 
